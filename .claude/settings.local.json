@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add scripts/automatic_dms4.py scripts/hashtags_scrapping_with_functions.py scripts/hashtags.py scripts/profile_scrapping_instaloader_database.py scripts/schedule_fb_dms.py scripts/schedule_ig_dms.py scripts/send_dms_parallel_functions.py scripts/send_dms_parallel.py scripts/threads_fb.py scripts/whatsapp_dms.py scripts/whatsapp_parallel_dms.py\ngit status)",
+      "Bash(git commit -m \"$\\(cat <<'EOF'\nadd scripts\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git log --all -S 'password=' --name-only --pretty=format: | grep '\\\\.py$' | sort -u 2>/dev/null; echo \"main repo done\")",
+      "Bash(git remote add origin https://github.com/Ajla115/Instagram-Stats-Web-Tracking-App.git\nmkdir -p /Users/ajlakorman/Documents/InstaMetrics/Instagram-Stats-Web-Tracking-App/backend/rest/dao\ncp /tmp/BaseDao.class.php.bak /Users/ajlakorman/Documents/InstaMetrics/Instagram-Stats-Web-Tracking-App/backend/rest/dao/BaseDao.class.php\ngit add backend/rest/dao/BaseDao.class.php\ngit commit -m \"$\\(cat <<'EOF'\nadd BaseDao\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push origin --force --all && git push origin --force --tags && echo \"=== main repo pushed ===\")"
+    ]
+  }
+}
