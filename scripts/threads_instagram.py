@@ -186,10 +186,11 @@ def send_dm(driver, username, message):
 
 def instagram_driver(sender, password, recipient, message,  port_value):
 
-    service = Service(executable_path="C:\\Users\\User\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe")
+    # Update path to your local ChromeDriver binary
+    service = Service(executable_path="/path/to/chromedriver")
     options = webdriver.ChromeOptions()
-    options.add_argument('--remote-debugging-port=' + port_value) 
-    options.add_argument('--user-data-dir=C:\selenum\ChromeProfile' + port_value) 
+    options.add_argument('--remote-debugging-port=' + port_value)
+    options.add_argument('--user-data-dir=/path/to/selenium/ChromeProfile' + port_value)
     driver = webdriver.Chrome(service=service, options=options)
     driver.maximize_window()
 
@@ -218,10 +219,10 @@ def instagram_driver(sender, password, recipient, message,  port_value):
     driver.quit()
 
 def send_bulk_dms(sender):
-    service = Service(executable_path="C:\\Users\\DT User\\Downloads\\chromedriver-win64\\chromedriver.exe")
+    service = Service(executable_path="/path/to/chromedriver")
     options = webdriver.ChromeOptions()
-    options.add_argument('--remote-debugging-port=' + sender["port"]) 
-    options.add_argument('--user-data-dir=C:\selenum\ChromeProfile' + sender["port"]) 
+    options.add_argument('--remote-debugging-port=' + sender["port"])
+    options.add_argument('--user-data-dir=/path/to/selenium/ChromeProfile' + sender["port"])
     driver = webdriver.Chrome(service=service, options=options)
     driver.maximize_window()
 
