@@ -1,5 +1,24 @@
-config.php
-vendor
-composer.lock
+# Environment & secrets
 .env
-./frontend/node_modules
+**/.env
+config.php
+
+# PHP dependencies
+composer.json
+composer.lock
+vendor/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+
+# SQL dumps (may contain real data)
+*.sql
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
